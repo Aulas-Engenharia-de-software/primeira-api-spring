@@ -8,10 +8,10 @@
 		<version>3.5.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.lucasmartins</groupId>
-	<artifactId>mineiracaodados</artifactId>
+	<groupId>com.task</groupId>
+	<artifactId>spring-boot</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>mineiracaodados</name>
+	<name>spring-boot</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>

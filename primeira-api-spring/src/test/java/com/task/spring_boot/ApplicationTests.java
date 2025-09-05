@@ -1,10 +1,10 @@
-package com.lucasmartins.mineiracaodados;
+package com.task.spring_boot;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MineiracaodadosApplicationTests {
+class ApplicationTests {
 
 	@Test
 	void contextLoads() {
