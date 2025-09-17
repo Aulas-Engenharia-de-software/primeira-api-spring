@@ -4,16 +4,19 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.lucasmartins.mineiracaodados.controller.dto.TurmaDto;
 
 @RestController
 @RequestMapping("/turmas")
 public class TurmaController {
 
     @GetMapping
-    public String buscarTurma() {
-        return "T03N - Mineração de dados";
+    public TurmaDto buscarTurma(@RequestBody TurmaDto turma) {
+        return turma;
     }
 
     @PostMapping("/criar")
@@ -28,7 +31,7 @@ public class TurmaController {
 
     @DeleteMapping("/deletar")
     public String deletarTurma() {
-        return null;    
+        return null;
     }
 
     @GetMapping("/disciplina")
