@@ -1,0 +1,23 @@
+{
+  "name": "guilherme_agustini_teixeira",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gagustinit/GUILHERME_AGUSTINI_TEIXEIRA.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gagustinit/GUILHERME_AGUSTINI_TEIXEIRA/issues"
+  },
+  "homepage": "https://github.com/Gagustinit/GUILHERME_AGUSTINI_TEIXEIRA#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
