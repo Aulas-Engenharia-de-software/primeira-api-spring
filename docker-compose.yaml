@@ -1,0 +1,16 @@
+services:
+  database:
+    image: postgres:16
+    container_name: postgres-spring-api
+    environment:
+      - POSTGRES_USER=felipe_api_spring_db
+      - POSTGRES_PASSWORD=felipe123
+      - POSTGRES_DB=felipe_api_spring
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    env_file:
+      - .env
+volumes:
+  pgdata:
