@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.5.5'
+    id 'io.spring.dependency-management' version '1.1.7'
+}
+
+group = 'com.bruno-goedert.org'
+version = '0.0.1-SNAPSHOT'
+description = 'Demo project for Spring Boot'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Starter para criar APIs REST
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // Starter para JPA (Hibernate) + integração com Spring Data
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+    // Driver do PostgreSQL
+    runtimeOnly 'org.postgresql:postgresql'
+
+    // Testes
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
