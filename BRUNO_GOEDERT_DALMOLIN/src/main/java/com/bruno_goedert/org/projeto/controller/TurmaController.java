@@ -1,4 +1,4 @@
-package com.bruno_goedert.org.projeto.Controller;
+package com.bruno_goedert.org.projeto.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
