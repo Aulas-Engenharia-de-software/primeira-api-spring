@@ -1,45 +1,30 @@
 package com.lucasmartins.mineiracaodados.controller;
 
+import com.lucasmartins.mineiracaodados.model.Disciplina;
+import com.lucasmartins.mineiracaodados.model.TurmaEntity;
+import com.lucasmartins.mineiracaodados.repository.TurmaRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import java.util.Arrays;
-import java.util.List;
 
 @RestController
 @RequestMapping("/turmas")
 public class TurmaController {
 
-    @GetMapping("/nome")
-    public String getNomeTurma() {
-        return "T03N";
-    }
-
-    @GetMapping("/quantidade")
-    public int getQuantidadeAlunos() {
-        return 30;
-    }
+    @Autowired
+    private TurmaRepository turmaRepository;
 
     @PostMapping
-    public String criarTurma() {
-        return "Turma T03N criada";
+    public TurmaEntity criarTurma(@RequestBody TurmaEntity turma) {
+        return turmaRepository.save(turma);
     }
 
-    @PutMapping("/{id}")
-    public String atualizarTurma(@PathVariable String id) {
-        return "Turma " + id + " atualizada";
-    }
-
-    @DeleteMapping("/{id}")
-    public void deletarTurma(@PathVariable String id) {
-        // Não retorna nada
-    }
-
-    @GetMapping("/disciplina")
-    public String getDisciplinaTurma() {
-        return "Matemática";
-    }
-
-    @GetMapping("/alunos")
-    public List<String> getListaAlunos() {
-        return Arrays.asList("Lucas", "Maria", "João", "Ana");
+    @PostMapping("/{id}/disciplina")
+    public TurmaEntity adicionarDisciplina(@PathVariable int id, @RequestBody Disciplina disciplina) {
+        TurmaEntity turma = turmaRepository.findById(id).orElse(null);
+        if (turma != null) {
+            turma.setDisciplina(disciplina);
+            return turmaRepository.save(turma);
+        }
+        return null;
     }
 }
