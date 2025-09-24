@@ -1,10 +1,6 @@
 package com.lucasmartins.mineiracaodados.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
-
+import jakarta.persistence.*;
 import java.util.List;
 
 @Entity
@@ -20,4 +16,11 @@ public class TurmaEntity {
 
     @OneToMany(mappedBy = "turma")
     private List<AlunoEntity> alunos;
+
+    @OneToMany(mappedBy = "turma", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<DisciplinaEntity> disciplinas;
+
+    // getters e setters (inclua o de disciplinas)
+    public List<DisciplinaEntity> getDisciplinas() { return disciplinas; }
+    public void setDisciplinas(List<DisciplinaEntity> disciplinas) { this.disciplinas = disciplinas; }
 }
