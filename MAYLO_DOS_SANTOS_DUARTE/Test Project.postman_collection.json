@@ -1,0 +1,257 @@
+{
+	"info": {
+		"_postman_id": "5e395441-62d5-4c36-afef-a7aeed3ea881",
+		"name": "Test Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44799207",
+		"_collection_link": "https://maylosantos-7747075.postman.co/workspace/Maylo-Santos's-Workspace~40430636-fc20-4c62-8721-97e717b49ece/collection/44799207-5e395441-62d5-4c36-afef-a7aeed3ea881?action=share&source=collection_link&creator=44799207"
+	},
+	"item": [
+		{
+			"name": "Class",
+			"item": [
+				{
+					"name": "Get Class Quantity",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6ImVuem8yIiwiZXhwIjoxNzUwOTgzMTM4fQ.3nfpdFIvdIdvSWjeXByuJQR8iLfr8St9j9BjlLFHxso",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseURL}}/class/quantity",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"class",
+								"quantity"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Class Name",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6ImVuem8yIiwiZXhwIjoxNzUwOTgzMTM4fQ.3nfpdFIvdIdvSWjeXByuJQR8iLfr8St9j9BjlLFHxso",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseURL}}/class/name",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"class",
+								"name"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Class Name",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6ImVuem8yIiwiZXhwIjoxNzUwOTgzMTM4fQ.3nfpdFIvdIdvSWjeXByuJQR8iLfr8St9j9BjlLFHxso",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "// Escreva o nome da turma no body",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/class/name",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"class",
+								"name"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Class by Name",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6ImVuem8yIiwiZXhwIjoxNzUwOTgzMTM4fQ.3nfpdFIvdIdvSWjeXByuJQR8iLfr8St9j9BjlLFHxso",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "// Escreva o nome da turma no body",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/class",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"class"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Class",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6ImVuem8yIiwiZXhwIjoxNzUwOTgzMTM4fQ.3nfpdFIvdIdvSWjeXByuJQR8iLfr8St9j9BjlLFHxso",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "// Escreva o nome da turma no body",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/class",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"class"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Discipline",
+			"item": [
+				{
+					"name": "Get Discipline",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6ImVuem8yIiwiZXhwIjoxNzUwOTgzMTM4fQ.3nfpdFIvdIdvSWjeXByuJQR8iLfr8St9j9BjlLFHxso",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseURL}}/discipline/name",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"discipline",
+								"name"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "http://localhost:8080",
+			"type": "default"
+		}
+	]
+}
