@@ -1,13 +1,13 @@
-package com.lucasmartins.mineiracaodados;
+package com.task.spring_boot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MineiracaodadosApplication {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MineiracaodadosApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 }
