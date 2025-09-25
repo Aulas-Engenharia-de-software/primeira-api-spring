@@ -1,4 +1,4 @@
-package com.lucasmartins.mineiracaodados.model;
+package com.enzo.atividade.dois.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

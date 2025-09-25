@@ -1,4 +1,4 @@
-package com.lucasmartins.mineiracaodados.controller.dto;
+package com.enzo.atividade.dois.controller.dto;
 
 public class TurmaDto {
 
