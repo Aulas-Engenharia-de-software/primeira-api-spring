@@ -1,4 +1,4 @@
-package com.lucasmartins.mineiracaodados.model;
+package com.aquilesdaniel.mineiracaodados.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -13,6 +13,5 @@ public class AlunoEntity {
 
   private String nome;
 
-  @ManyToOne
-  private TurmaEntity turma;
+ 
 }
