@@ -1,4 +1,4 @@
-package com.lucasmartins.mineiracaodados.model;
+package com.felipeemanuel.mineiracaodados.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -23,6 +23,4 @@ public class DisciplinaEntity {
 
     private String professor;
 
-    @ManyToMany(mappedBy = "disciplina")
-    private List<TurmaEntity> turma;
 }
